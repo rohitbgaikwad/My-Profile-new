@@ -9,7 +9,7 @@
         div {
 
             background-color: rgb(225, 217, 209);
-            text-align: right;
+            text-align: center;
 
         }
 
@@ -24,18 +24,14 @@
             text-transform: uppercase;
             text-decoration: none;
             background-color: rgb(217, 217, 202);
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
             text-align: center;
-
+            margin-right: 16px;
+            margin-left: 16px;
+            
+           
 
         }
 
-        #nav_bar,
-        a {
-            margin-right: 40px;
-        }
 
         #person a {
             font-size: larger;
@@ -44,20 +40,29 @@
 
         }
 
-        .text_pad {
-            margin-right: 40px;
+       .text_pad{
+            
             font-size: larger;
-            text-align: center;
+            
         }
         .text_footer {
             font-size:x-large ;
             color: rgb(231, 63, 63);
-            margin: right 40px; ;
+            margin: right 40px; 
+            margin-left: 20px;
             text-align: center;
             
         }
         #name{
             text-align: center;
+            background-color: rgb(217, 217, 202);
+        }
+        nav{
+            padding: 15px;
+        }
+        .text_mar{
+                 margin-left: 20px;
+                 margin-right: 20px;
         }
     </style>
 
@@ -70,9 +75,9 @@
 <body>
     <header>
         <div>
-            <span class="text_pad"> <i class="fa-solid fa-user"></i>Rohit Gaikwad </span>
-            <span class="text_pad"> <i class="fa-solid fa-envelope"></i> rohit.b@gmail.com</span>
-            <span class="text_pad"> <i class="fa-sharp fa-solid fa-mobile"></i> 7219250465</span>
+            <span class="text_pad"> <i class="fa-solid fa-user"></i><span class="text_mar">Rohit Gaikwad </span>
+            <span class="text_pad"> <i class="fa-solid fa-envelope"></i> <span class="text_mar">rohit.b@gmail.com</span></span>
+            <span class="text_pad"> <i class="fa-sharp fa-solid fa-mobile"></i><span class="text_mar">7219250465</span></span>
         </div>
     </header>
     <hr>
@@ -87,7 +92,7 @@
     </nav>
     <hr>
 
-    <iframe name="my frame" height="500px" width="1200px" frameborder="0px"></iframe><br>
+    <iframe name="my frame" height="500px" width="1400px" frameborder="0px"></iframe><br>
 
     <hr>
     <footer id="name">
