@@ -4,16 +4,39 @@
 <head>
 
     <title>Registration Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         label {
             margin: auto;
             padding: 0%;
             width: 10px;
             height: 10px;
+            border-radius: 50px;
 
         }
-       
+        .regi_new
+        {
+            text-transform: uppercase;
+            color: cadetblue;
+            background-color: rgb(232, 223, 211);
+            border-radius: 15px;
+        
+        }
+
+        .regi_new:hover {
+            background-color: rgb(218, 237, 118);
+            text-shadow: yellow;
+            border-radius: 15px;
+          
+        }
+        body{
+            background-color: rgb(215, 231, 231);
+        }
+        #reg_form{
+            color: brown;
+        }
     </style>
 </head>
 
@@ -22,76 +45,82 @@
     <form>
         <table>
             <tr>
-                <td><label>FULL NAME :</label></td>
-                <TD><input type="text" placeholder="FULL NAME" autofocus required></TD><br>
+                <td><label id="reg_form">FULL NAME :</label></td>
+                <TD><input type="text" placeholder="FULL NAME" autofocus required class="regi_new"></TD><br>
             </tr>
             <tr>
-                <td><label>EMAIL :</label></td>
-                <td><input type="email" placeholder="EMAIL"></td>
+                <td><label id="reg_form">EMAIL :</label></td>
+                <td><input type="email" placeholder="EMAIL" class="regi_new"></td>
             </tr>
             <tr>
-                <td><label>PASSWORD :</label></td>
-                <td><input type="password" placeholder="............."></td>
+                <td><label id="reg_form">PASSWORD :</label></td>
+                <td><input type="password" placeholder="............." class="regi_new"></td>
             </tr>
             <tr>
-                <td><label>MOBILE NO :</label></td>
-                <td><input type="number" placeholder="MOBILE NO"></td>
+                <td><label id="reg_form">MOBILE NO :</label></td>
+                <td><input type="number" placeholder="MOBILE NO" class="regi_new"></td>
             </tr>
             <tr>
-                <td><label for="">PHOTO</label></td>
-                <td><input type="file" multiple></td>
+                <td><label id="reg_form">PHOTO</label></td>
+                <td><input type="file" multiple class="regi_new"></td>
             </tr>
             <tr>
-                <td><label for="">DATE OF BIRTH :</label></td>
-                <td><input type="date"></td>
+                <td><label id="reg_form">DATE OF BIRTH :</label></td>
+                <td><input type="date" class="regi_new"></td>
             </tr>
             <tr>
-                <td><label for="">GENDER :</label></td>
+                <td><label id="reg_form">GENDER :</label></td>
                 <td><input type="radio" name="gender"><label> MALE</label>
                     <input type="radio" name="gender"><label>FEMALE</label>
                     <input type="radio" name="gender"><label>OTHERS</label>
                 </td>
             </tr>
             <tr>
-                <td><label for="">MARRITIAL STATUS :</label></td>
+                <td><label id="reg_form">MARRITIAL STATUS :</label></td>
                 <TD><input type="radio" name="MARRITIAL STATUS"><label> YES</label>
-                <input type="radio" name="MARRITIAL STATUS"><label>NO</label></TD>
+                    <input type="radio" name="MARRITIAL STATUS"><label>NO</label>
+                </TD>
             </tr>
             <tr>
-                <td><label>SKILLS :</label></td>
+                <td><label id="reg_form">SKILLS :</label></td>
                 <td><input type="checkbox">JAVA
                     <input type="checkbox">ANGULAR
                     <input type="checkbox">HTML
                     <input type="checkbox">PYTHON
                 </td>
             </tr>
-            <tr><td><label>PROFILE :</label></td>
+            <tr>
+                <td><label id="reg_form">PROFILE :</label></td>
                 <td><select>
-                    <option>WEB DEVELOPER</option>
-                    <option>APP DEVELOPER</option>
-                </select>
-            
-            </td></tr>
-            <tr><td>
-                <label>COUNTRY :</label>
-            </td>
-        <td><input type="text" value="INDIA" readonly> </td></tr>
-        <tr>
-            <td>ADDRESS :</td>
-            <td><textarea  name="ADDRESS" id="" cols="30" rows="10"></textarea></td>
-        </tr>
-        <tr>
-            <td><input type="SUBMIT"></td>
-            <td> <input type="reset"></td>
-        </tr>
+                        <option>WEB DEVELOPER</option>
+                        <option>APP DEVELOPER</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="reg_form">COUNTRY :</label>
+                </td>
+                <td><input type="text" value="INDIA" readonly class="regi_new"> </td>
+            </tr>
+            <tr>
+                <td id="reg_form">ADDRESS :</td>
+                <td><textarea name="ADDRESS" id="" cols="30" rows="10" class="regi_new"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="SUBMIT" class="regi_new"></td>
+                <td> <input type="reset" class="regi_new"></td>
+            </tr>
         </table>
     </form>
     <footer></footer>
     <big>FOLLOW US :</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=""><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=""><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href=""><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=""><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href=""><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </footer>
+
 </body>
 
 </html>
