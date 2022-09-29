@@ -9,8 +9,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         label {
-            margin: auto;
-            padding: 0%;
             width: 10px;
             height: 10px;
             border-radius: 50px;
@@ -33,15 +31,25 @@
         }
         body{
             background-color: rgb(215, 231, 231);
+            margin: 15px;
+            padding-left: 15px;
         }
         #reg_form{
             color: brown;
+        }
+        #form_reg{
+            text-transform: uppercase;
+            text-shadow: 4px 2px 5px #2c3e50;
+        }
+        .regi_class{
+            color: #2c3e50;
+            border-radius: 15px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Registration form</h1>
+    <h1 id="form_reg">Registration form</h1>
     <form>
         <table>
             <tr>
@@ -62,7 +70,7 @@
             </tr>
             <tr>
                 <td><label id="reg_form">PHOTO</label></td>
-                <td><input type="file" multiple class="regi_new"></td>
+                <td><input type="file" multiple ></td>
             </tr>
             <tr>
                 <td><label id="reg_form">DATE OF BIRTH :</label></td>
@@ -109,8 +117,8 @@
                 <td><textarea name="ADDRESS" id="" cols="30" rows="10" class="regi_new"></textarea></td>
             </tr>
             <tr>
-                <td><input type="SUBMIT" class="regi_new"></td>
-                <td> <input type="reset" class="regi_new"></td>
+                <td><input type="SUBMIT" class="regi_class" </td>
+                <td> <input type="reset" class="regi_class"></td>
             </tr>
         </table>
     </form>
